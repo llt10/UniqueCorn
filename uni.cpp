@@ -44,3 +44,22 @@ void displayName() const {
     std::cout << "This unicorn's name is " << name << std::endl;
     }
 };
+
+string Unicorn::takenName[100];
+int Unicorn::nameCount = 0;
+
+int main() {
+    try {
+        Unicorn u1("Twilight");
+        u1.displayName();
+        
+        Unicorn u2("Sprinkle");
+        u2.displayName();
+
+        Unicorn u3("Starlight");
+        u3.displayName(); 
+    } catch (const exception& e) {
+        std::cout << e.what() << std::endl;
+    }
+    std::cout << "END! All unicorns have lost their magic." << std::endl;
+}
