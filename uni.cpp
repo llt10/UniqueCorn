@@ -25,7 +25,7 @@ name = unicornName;
 takenName[nameCount] = unicornName;
 nameCount++;
 
-std::cout << "A unicorn named" << name << " has been born!" << std::endl;
+std::cout << "A unicorn named " << name << " has been born!" << std::endl;
 }
 
 ~Unicorn() {
